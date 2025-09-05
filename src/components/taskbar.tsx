@@ -52,12 +52,13 @@ export function Taskbar() {
       </div>
 
       {/* System Tray Area */}
-      <div className="flex items-center gap-1">
-        {/* Separator antes del system tray */}
+      <div className="flex items-center gap-1">        
         <div className="w-px h-8 bg-gray-400 mr-2"></div>
+
         <button
           onClick={() => setLocale(locale === "en" ? "es" : "en")}
-          className="px-2 border"
+          className="px-2 py-1.5 text-sm border border-[1px solid gray]
+                 shadow-[inset_1px_1px_0px_white,inset_-1px_-1px_0px_black]"
         >
           <p className="font-semibold text-xs ">{locale.toUpperCase()}</p>
         </button>

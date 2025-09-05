@@ -21,8 +21,7 @@ export function ClockComponent() {
   return (
     <div
       className="px-3 py-1 text-sm bg-[var(--taskbar-bg)]
-                 border border-[1px solid gray]
-                 shadow-[inset_1px_1px_0px_white,inset_-1px_-1px_0px_black]"
+                 "
     >
       {formatTime(currentTime)}
     </div>
