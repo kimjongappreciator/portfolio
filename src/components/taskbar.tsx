@@ -3,6 +3,7 @@ import { StartMenu } from "./start-menu";
 import { Button } from "./ui/button";
 import { Popover, PopoverTrigger, PopoverContent } from "./ui/popover";
 import { useT, useI18nStore } from "@/store/i18n";
+import startIcon from "@/assets/start_icon.png";
 
 export function Taskbar() {
   const { locale, setLocale } = useI18nStore();
@@ -18,16 +19,13 @@ export function Taskbar() {
           <Button
             variant="outline"
             className="flex items-center gap- px-1 py-1 mr-2
-                        w-fit
-                        h-[28px]
+                       w-fit
+                       h-[28px]
                        border border-[var(--taskbar-border)]
-                       rounded-none
-                       bg-[var(--taskbar-bg)]
-                       active:translate-y-[1px] 
                        win-raised"
           >
             <img
-              src="src/assets/start_icon.png"
+              src={startIcon}
               alt="Start"
               className="w-6 h-5 px-[-5px]"
             />

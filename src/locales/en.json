@@ -3,5 +3,8 @@
   "programs": "Programs",
   "documents": "Documents",
   "settings": "Settings",
-  "shutdown": "Shut Down..."
+  "shutdown": "Shut Down...",
+  "contact": "Contact",
+  "about": "About me",
+  "projects":" My Proyects"
 }

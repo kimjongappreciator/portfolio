@@ -93,6 +93,7 @@
 
 @layer utilities {
   .win-raised {
+    @apply rounded-none bg-[var(--taskbar-bg)];
     
     box-shadow: -1px -1px 0px white, 1px 1px 0px #404040;
   }
@@ -100,5 +101,11 @@
   /* === Sunken (botón presionado o label hundido) === */
   .win-sunken {    
     box-shadow: inset 1px 1px 0px #404040, inset -1px -1px 0px white;
-  }  
+  }
+
+  .window-bar{
+    background: #09226B;
+    background: linear-gradient(90deg,rgba(9, 34, 107, 1) 0%, rgba(159, 200, 242, 1) 100%, rgba(159, 200, 242, 1) 100%);
+    color: white;
+  }
 }
