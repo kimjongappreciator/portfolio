@@ -19,10 +19,7 @@ export function ClockComponent() {
   };
 
   return (
-    <div
-      className="px-3 py-1 text-sm bg-[var(--taskbar-bg)]
-                 "
-    >
+    <div className="px-3 py-1 text-sm win-sunken">
       {formatTime(currentTime)}
     </div>
   );

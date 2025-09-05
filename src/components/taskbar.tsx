@@ -17,17 +17,19 @@ export function Taskbar() {
         <PopoverTrigger asChild>
           <Button
             variant="outline"
-            className="flex items-center gap-2 px-3 py-1 mr-2                       
+            className="flex items-center gap- px-1 py-1 mr-2
+                        w-fit
+                        h-[28px]
                        border border-[var(--taskbar-border)]
                        rounded-none
                        bg-[var(--taskbar-bg)]
                        active:translate-y-[1px] 
-                       shadow-[inset_1px_1px_0px_white,inset_-1px_-1px_0px_black]"
+                       win-raised"
           >
             <img
               src="src/assets/start_icon.png"
               alt="Start"
-              className="w-5 h-5"
+              className="w-6 h-5 px-[-5px]"
             />
             <span className="text-sm font-bold">{t("start")}</span>
           </Button>
@@ -35,7 +37,8 @@ export function Taskbar() {
         <PopoverContent
           side="top"
           align="start"
-          className="w-40 p-2 bg-[var(--taskbar-bg)] border border-[var(--taskbar-border)]
+          className="w-fit p-2 bg-[var(--taskbar-bg)] border border-[var(--taskbar-border)]
+                     rounded-none mb-1
                      shadow-[2px_2px_0px_black,-1px_-1px_0px_white]"
           sideOffset={2}
         >
@@ -52,13 +55,12 @@ export function Taskbar() {
       </div>
 
       {/* System Tray Area */}
-      <div className="flex items-center gap-1">        
+      <div className="flex items-center gap-1">
         <div className="w-px h-8 bg-gray-400 mr-2"></div>
 
         <button
           onClick={() => setLocale(locale === "en" ? "es" : "en")}
-          className="px-2 py-1.5 text-sm border border-[1px solid gray]
-                 shadow-[inset_1px_1px_0px_white,inset_-1px_-1px_0px_black]"
+          className="px-2 py-1.5 text-sm win-sunken"
         >
           <p className="font-semibold text-xs ">{locale.toUpperCase()}</p>
         </button>
