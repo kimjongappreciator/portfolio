@@ -2,17 +2,21 @@ import { ClockComponent } from "./clock";
 import { StartMenu } from "./start-menu";
 import { Button } from "./ui/button";
 import { Popover, PopoverTrigger, PopoverContent } from "./ui/popover";
+import { useT, useI18nStore } from "@/store/i18n";
 
 export function Taskbar() {
+  const { locale, setLocale } = useI18nStore();
+  const t = useT();
   return (
-    <div className="bg-[var(--taskbar-bg)] border-t-2 border-[var(--taskbar-border)]
-                    w-full fixed bottom-0 h-12 flex items-center px-1 shadow-inner z-50">
-      
+    <div
+      className="bg-[var(--taskbar-bg)] border-t-2 border-[var(--taskbar-border)]
+                    w-full fixed bottom-0 h-fit flex items-center px-[2px] shadow-inner z-50 py-[1px]"
+    >
       {/* Start Button */}
       <Popover>
         <PopoverTrigger asChild>
           <Button
-            variant="ghost"
+            variant="outline"
             className="flex items-center gap-2 px-3 py-1 mr-2                       
                        border border-[var(--taskbar-border)]
                        rounded-none
@@ -25,7 +29,7 @@ export function Taskbar() {
               alt="Start"
               className="w-5 h-5"
             />
-            <span className="text-sm font-bold">Start</span>
+            <span className="text-sm font-bold">{t("start")}</span>
           </Button>
         </PopoverTrigger>
         <PopoverContent
@@ -49,9 +53,14 @@ export function Taskbar() {
 
       {/* System Tray Area */}
       <div className="flex items-center gap-1">
-        
         {/* Separator antes del system tray */}
         <div className="w-px h-8 bg-gray-400 mr-2"></div>
+        <button
+          onClick={() => setLocale(locale === "en" ? "es" : "en")}
+          className="px-2 border"
+        >
+          <p className="font-semibold text-xs ">{locale.toUpperCase()}</p>
+        </button>
 
         {/* Clock placeholder */}
         <ClockComponent></ClockComponent>

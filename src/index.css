@@ -78,6 +78,8 @@
   --taskbar-border: hsl(0, 0%, 67%);  
   --font-family: 'MS Sans Serif', sans-serif;  
   --font-family-system: 'Tahoma', 'MS Sans Serif', sans-serif;
+  --desktop-bg: hsl(180, 100%, 25%);
+  --inset-shadow-md: inset 0 2px rgb(255, 255, 255);
 }
 /*
 .dark {

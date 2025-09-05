@@ -1,6 +1,6 @@
 export function Desktop() {
   return (
-    <div className="h-screen w-screen bg-cyan-800 p-4">
+    <div className="h-screen w-screen bg-[var(--desktop-bg)] p-4">
       {/* Escritorio */}
       <div className="grid grid-cols-6 gap-6">
         <div className="flex flex-col items-center">

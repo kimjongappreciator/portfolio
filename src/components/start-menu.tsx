@@ -1,22 +1,22 @@
+import {useT } from "@/store/i18n";
+
 export function StartMenu(){
+    const t = useT();
     return(
         <>
         <div className="flex flex-col gap-1 font-sans">
             <button className="text-left px-2 py-1 hover:bg-blue-600 hover:text-white">
-              Programs
+              {t("programs")}
             </button>
             <button className="text-left px-2 py-1 hover:bg-blue-600 hover:text-white">
-              Documents
+              {t("documents")}
             </button>
             <button className="text-left px-2 py-1 hover:bg-blue-600 hover:text-white">
-              Settings
+              {t("settings")}
             </button>
             <button className="text-left px-2 py-1 hover:bg-blue-600 hover:text-white">
-              Shut Down...
-            </button>
-            <button className="text-left px-2 py-1 hover:bg-blue-600 hover:text-white">
-              Shut Down...
-            </button>
+              {t("shutdown")}
+            </button>            
           </div>
         </>
     )
