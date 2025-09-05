@@ -56,9 +56,8 @@ export function Desktop() {
         <DesktopIcon
           icon={html_icon}
           label="contact"
-          onClick={() => handleIconClick("contact")}
-        />
-        {/* Más iconos cuando los necesites... */}
+          onClick={() => handleIconClick("contact")}          
+        />        
       </div>
 
       {/* Dialog para Sobre mí */}
