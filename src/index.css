@@ -108,4 +108,9 @@
     background: linear-gradient(90deg,rgba(9, 34, 107, 1) 0%, rgba(159, 200, 242, 1) 100%, rgba(159, 200, 242, 1) 100%);
     color: white;
   }
+
+  .win98-shadow {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #808080,
+              inset -2px -2px #dfdfdf, inset 2px 2px #000;
+}
 }
