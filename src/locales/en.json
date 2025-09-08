@@ -1,3 +1,4 @@
+
 {
   "start": "Start",
   "programs": "Programs",
@@ -6,5 +7,27 @@
   "shutdown": "Shut Down...",
   "contact": "Contact",
   "about": "About me",
-  "projects":" My Proyects"
+  "projects": " My Projects",  
+  
+  "file": "File",
+  "edit": "Edit",
+  "view": "View",
+  "help": "Help",
+  
+  "new_tab": "New Tab",
+  "new_window": "New Window",
+  "share": "Share",
+  "print": "Print",
+    
+  "undo": "Undo",
+  "cut": "Cut",
+  "copy": "Copy",
+  "paste": "Paste",
+    
+  "toolbar": "Toolbar",
+  "status_bar": "Status Bar",
+  "refresh": "Refresh",
+    
+  "help_topics": "Help Topics",
+  "about_menu": "About"
 }

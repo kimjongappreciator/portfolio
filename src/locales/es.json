@@ -6,5 +6,27 @@
   "shutdown": "Apagar...",
   "contact": "Contacto",
   "about": "Acerca de mi",
-  "projects":" Mis Proyectos"
+  "projects": " Mis Proyectos",
+  
+  "file": "Archivo",
+  "edit": "Editar",
+  "view": "Ver",
+  "help": "Ayuda",
+    
+  "new_tab": "Nueva Pestaña",
+  "new_window": "Nueva Ventana",
+  "share": "Compartir",
+  "print": "Imprimir",
+    
+  "undo": "Deshacer",
+  "cut": "Cortar",
+  "copy": "Copiar",
+  "paste": "Pegar",
+    
+  "toolbar": "Barra de herramientas",
+  "status_bar": "Barra de estado",
+  "refresh": "Actualizar",
+    
+  "help_topics": "Temas de ayuda",
+  "about_menu": "Acerca de"
 }
