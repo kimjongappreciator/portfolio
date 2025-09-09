@@ -29,5 +29,29 @@
   "refresh": "Refresh",
     
   "help_topics": "Help Topics",
-  "about_menu": "About"
+  "about_menu": "About",
+
+
+  "back": "Back",
+  "forward": "Forward", 
+  "stop": "Stop",  
+  "home": "Home",
+  "search": "Search",
+  "history": "History",
+  "favorites": "Favorites",
+  "address": "Address",
+  "go": "Go",
+  "links": "Links",
+  "best_of_web": "Best of the Web",
+  "channel_guide": "Channel Guide",
+  "customize_links": "Customize Links",
+
+  
+  "about_me_title": "About Me",
+  "about_me_intro": "I am Sebastián Chacón, a software engineer with experience in Full Stack development, working with frameworks such as Angular, Vue, and Flutter on the frontend, and Node.js, Spring Boot, and Flask on the backend.",
+  "about_me_experience": "I have developed web and mobile applications, scalable APIs, and research projects in artificial intelligence, including an LSTM-based system for real-time translation of Peruvian Sign Language, published at IEEE.",
+  "about_me_stack": "My tech stack includes JavaScript/TypeScript, Python, Java, relational databases like PostgreSQL and MySQL, as well as Docker for deployments and modern development tools.",
+  "about_me_interests": "My current interests include applied artificial intelligence, cybersecurity, and building inclusive solutions that create social impact.",
+  "about_me_values": "I value continuous learning, teamwork, and the development of technology that can improve people's lives."
+  
 }

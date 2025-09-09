@@ -1,8 +1,8 @@
 import { useT } from "@/store/i18n";
-import programs from "@/assets/programs.png";
-import documents from "@/assets/documents.png";
-import settings from "@/assets/settings.png";
-import shut_down from "@/assets/shut_down.png";
+import programs from "@/assets/start-menu-icons/programs.png";
+import documents from "@/assets/start-menu-icons/documents.png";
+import settings from "@/assets/start-menu-icons/settings.png";
+import shut_down from "@/assets/start-menu-icons/shut_down.png";
 
 export function StartMenu() {
   const t = useT();

@@ -4,7 +4,6 @@ import close_icon from "@/assets/close-icon.png";
 import maximize_icon from "@/assets/maximize.png";
 import minimize_icon from "@/assets/minimize.png";
 import { WindowToolbar } from "./window-toolbar";
-
 interface WindowProps {
   title: string;
   children: ReactNode;
@@ -15,9 +14,9 @@ export function WindowComponent({ title, children, onClose }: WindowProps) {
   const t = useT();
   return (
     <div
-      className="w-80 border border-main-border bg-white 
+      className="w-fit max-h-[80vh] border border-main-border bg-white 
                     shadow-[2px_2px_0px_black,-1px_-1px_0px_white]
-                    flex flex-col"
+                    flex flex-col "
     >
       {/* Barra de título */}
       <div className="flex justify-between items-center px-2 py-1 window-bar text-sm font-bold">
@@ -44,9 +43,10 @@ export function WindowComponent({ title, children, onClose }: WindowProps) {
         </div>
       </div>
       <WindowToolbar />
+      
 
       {/* Contenido dinámico */}
-      <div className="flex-1 p-3 bg-main-bg">{children}</div>
+      <div className="flex-1 bg-main-bg">{children}</div>
     </div>
   );
 }

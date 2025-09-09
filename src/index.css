@@ -113,4 +113,15 @@
   box-shadow: inset -1px -1px #fff, inset 1px 1px #808080,
               inset -2px -2px #dfdfdf, inset 2px 2px #000;
 }
+  .desktop-icon{
+    @apply p-0 m-0 border-0 bg-transparent shadow-none max-w-none w-auto h-auto;
+  }
+
+  .explorer-bar-button{
+    @apply w-6 h-6 bg-[#c0c0c0] text-black text-xs font-bold
+            border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080]
+            hover:border-t-[#dfdfdf] hover:border-l-[#dfdfdf] hover:border-r-[#404040] hover:border-b-[#404040]
+            active:border-t-[#808080] active:border-l-[#808080] active:border-r-white active:border-b-white
+            focus:outline-none flex items-center justify-center;
+  }
 }

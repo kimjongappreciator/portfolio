@@ -28,5 +28,27 @@
   "refresh": "Actualizar",
     
   "help_topics": "Temas de ayuda",
-  "about_menu": "Acerca de"
+  "about_menu": "Acerca de",
+
+  "back": "Atrás",
+  "forward": "Adelante",
+  "stop": "Detener",  
+  "home": "Inicio",
+  "search": "Buscar",
+  "history": "Historial",
+  "favorites": "Favoritos", 
+  "address": "Dirección",
+  "go": "Ir",
+  "links": "Vínculos",
+  "best_of_web": "Lo Mejor de la Web",
+  "channel_guide": "Guía de Canales",
+  "customize_links": "Personalizar Vínculos",
+
+  "about_me_title": "Sobre mí",
+  "about_me_intro": "Soy Sebastián Chacón, ingeniero de software con experiencia en desarrollo Full Stack, trabajando con frameworks como Angular, Vue y Flutter en frontend, y Node.js, Spring Boot y Flask en backend.",
+  "about_me_experience": "He desarrollado aplicaciones web y móviles, APIs escalables y proyectos de investigación en inteligencia artificial, incluyendo un sistema basado en LSTM para la traducción en tiempo real de Lengua de Señas Peruana, publicado en la IEEE.",
+  "about_me_stack": "Mi stack de trabajo incluye JavaScript/TypeScript, Python, Java, bases de datos relacionales como PostgreSQL y MySQL, además de Docker para despliegues y herramientas modernas de desarrollo.",
+  "about_me_interests": "Mis intereses actuales incluyen inteligencia artificial aplicada, ciberseguridad y el desarrollo de soluciones inclusivas que generen impacto social.",
+  "about_me_values": "Valoro el aprendizaje continuo, la colaboración en equipo y el desarrollo de tecnología que pueda mejorar la vida de las personas."
+  
 }

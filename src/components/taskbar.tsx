@@ -3,7 +3,7 @@ import { StartMenu } from "./start-menu";
 import { Button } from "./ui/button";
 import { Popover, PopoverTrigger, PopoverContent } from "./ui/popover";
 import { useT, useI18nStore } from "@/store/i18n";
-import startIcon from "@/assets/start_icon.png";
+import startIcon from "@/assets/start-menu-icons/start_icon.png";
 
 export function Taskbar() {
   const { locale, setLocale } = useI18nStore();
@@ -52,7 +52,7 @@ export function Taskbar() {
         {/* Aquí irían los botones de aplicaciones abiertas */}
       </div>
 
-      {/* System Tray Area */}
+      {/* System Tray*/}
       <div className="flex items-center gap-1">
         <div className="w-px h-8 bg-gray-400 mr-2"></div>
 
@@ -62,8 +62,7 @@ export function Taskbar() {
         >
           <p className="font-semibold text-xs ">{locale.toUpperCase()}</p>
         </button>
-
-        {/* Clock placeholder */}
+        
         <ClockComponent></ClockComponent>
       </div>
     </div>

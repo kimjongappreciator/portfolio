@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { WindowComponent } from "./window";
 import { useT } from "@/store/i18n";
-import note_pad from "@/assets/notepad.png"
-import briefcase from "@/assets/briefcase.png"
-import html_icon from "@/assets/html.png"
+import note_pad from "@/assets/desktop-icons/notepad.png"
+import folder from "@/assets/desktop-icons/folder.png"
+import html_icon from "@/assets/desktop-icons/html.png"
+import { AboutMe } from "./about-me";
 
 interface DesktopIconProps {
   icon: string;
@@ -40,8 +41,7 @@ export function Desktop() {
   };
 
   return (
-    <div className="h-screen w-screen bg-[var(--desktop-bg)] p-4">
-      {/* Escritorio */}
+    <div className="h-screen w-screen bg-[var(--desktop-bg)] p-4">      
       <div className="grid grid-cols-6 gap-6">
         <DesktopIcon
           icon={note_pad}
@@ -49,7 +49,7 @@ export function Desktop() {
           onClick={() => handleIconClick("about")}
         />
         <DesktopIcon
-          icon={briefcase}
+          icon={folder}
           label="projects"
           onClick={() => handleIconClick("projects")}
         />
@@ -63,14 +63,14 @@ export function Desktop() {
       {/* Dialog para Sobre mí */}
       <Dialog open={activeDialog === "about"} onOpenChange={closeDialog}>
         <DialogContent
-          className="p-0 m-0 border-0 bg-transparent shadow-none max-w-none w-auto h-auto"
+          className="desktop-icon"
           showCloseButton={false}
         >
-          {/* DialogContent necesita un DialogTitle para funcionar correctamente. */}
+          {/* Sin esto la consola retorna errores. */}
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="about" onClose={closeDialog}>
             {/* contenido */}
-            <div>Contenido de Sobre mí...</div>
+            <AboutMe></AboutMe>
           </WindowComponent>
         </DialogContent>
       </Dialog>
@@ -78,10 +78,10 @@ export function Desktop() {
       {/* Dialog para Proyectos */}
       <Dialog open={activeDialog === "projects"} onOpenChange={closeDialog}>
         <DialogContent
-          className="p-0 m-0 border-0 bg-transparent shadow-none max-w-none w-auto h-auto"
+          className="desktop-icon"
           showCloseButton={false}
         >
-          {/* DialogContent necesita un DialogTitle para funcionar correctamente. */}
+          {/* Sin esto la consola retorna errores. */}
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="projects" onClose={closeDialog}>
             {/* contenido */}
@@ -93,10 +93,10 @@ export function Desktop() {
       {/* Dialog para Contacto */}
       <Dialog open={activeDialog === "contact"} onOpenChange={closeDialog}>
         <DialogContent
-          className="p-0 m-0 border-0 bg-transparent shadow-none max-w-none w-auto h-auto"
+          className="desktop-icon"
           showCloseButton={false}
         >
-          {/* DialogContent necesita un DialogTitle para funcionar correctamente. */}
+          {/* Sin esto la consola retorna errores. */}
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="contact" onClose={closeDialog}>
             {/* contenido */}
