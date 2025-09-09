@@ -1,35 +1,15 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { WindowComponent } from "./window";
-import { useT } from "@/store/i18n";
 import note_pad from "@/assets/desktop-icons/notepad.png";
 import folder from "@/assets/desktop-icons/folder.png";
 import html_icon from "@/assets/desktop-icons/html.png";
 import { AboutMe } from "./about-me";
 import { ContactMe } from "./contact-me";
 import { MyProjects } from "./my-projects";
+import { DesktopIcon } from "./desktop-icon";
 
-interface DesktopIconProps {
-  icon: string;
-  label: string;
-  onClick: () => void;
-}
 
-function DesktopIcon({ icon, label, onClick }: DesktopIconProps) {
-  const t = useT();
-  return (
-    <div
-      className="flex flex-col w-[75px] items-center cursor-pointer hover:bg-blue-600 hover:bg-opacity-30 p-2 rounded select-none"
-      onClick={onClick}
-      onDoubleClick={onClick} // También funciona con doble clic
-    >
-      <img src={icon} alt={label} className="w-12 h-12" />
-      <span className="text-white text-sm mt-1 text-center leading-tight">
-        {t(label)}
-      </span>
-    </div>
-  );
-}
 
 export function Desktop() {
   const [activeDialog, setActiveDialog] = useState(null);
