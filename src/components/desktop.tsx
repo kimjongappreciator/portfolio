@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { WindowComponent } from "./window";
 import { useT } from "@/store/i18n";
-import note_pad from "@/assets/desktop-icons/notepad.png"
-import folder from "@/assets/desktop-icons/folder.png"
-import html_icon from "@/assets/desktop-icons/html.png"
+import note_pad from "@/assets/desktop-icons/notepad.png";
+import folder from "@/assets/desktop-icons/folder.png";
+import html_icon from "@/assets/desktop-icons/html.png";
 import { AboutMe } from "./about-me";
+import { ContactMe } from "./contact-me";
+import { MyProjects } from "./my-projects";
 
 interface DesktopIconProps {
   icon: string;
@@ -14,7 +16,7 @@ interface DesktopIconProps {
 }
 
 function DesktopIcon({ icon, label, onClick }: DesktopIconProps) {
-    const t = useT();
+  const t = useT();
   return (
     <div
       className="flex flex-col w-[75px] items-center cursor-pointer hover:bg-blue-600 hover:bg-opacity-30 p-2 rounded select-none"
@@ -41,10 +43,10 @@ export function Desktop() {
   };
 
   return (
-    <div className="h-screen w-screen bg-[var(--desktop-bg)] p-4">      
+    <div className="h-screen w-screen bg-[var(--desktop-bg)] p-4">
       <div className="grid grid-cols-6 gap-6">
         <DesktopIcon
-          icon={note_pad}
+          icon={html_icon}
           label="about"
           onClick={() => handleIconClick("about")}
         />
@@ -54,53 +56,41 @@ export function Desktop() {
           onClick={() => handleIconClick("projects")}
         />
         <DesktopIcon
-          icon={html_icon}
+          icon={note_pad}
           label="contact"
-          onClick={() => handleIconClick("contact")}          
-        />        
+          onClick={() => handleIconClick("contact")}
+        />
       </div>
 
       {/* Dialog para Sobre mí */}
       <Dialog open={activeDialog === "about"} onOpenChange={closeDialog}>
-        <DialogContent
-          className="desktop-icon"
-          showCloseButton={false}
-        >
+        <DialogContent className="desktop-icon" showCloseButton={false}>
           {/* Sin esto la consola retorna errores. */}
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="about" onClose={closeDialog}>
-            {/* contenido */}
-            <AboutMe></AboutMe>
+            <AboutMe />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       {/* Dialog para Proyectos */}
       <Dialog open={activeDialog === "projects"} onOpenChange={closeDialog}>
-        <DialogContent
-          className="desktop-icon"
-          showCloseButton={false}
-        >
+        <DialogContent className="desktop-icon" showCloseButton={false}>
           {/* Sin esto la consola retorna errores. */}
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="projects" onClose={closeDialog}>
-            {/* contenido */}
-            <div>Contenido de Proyectos...</div>
+            <MyProjects />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       {/* Dialog para Contacto */}
       <Dialog open={activeDialog === "contact"} onOpenChange={closeDialog}>
-        <DialogContent
-          className="desktop-icon"
-          showCloseButton={false}
-        >
+        <DialogContent className="desktop-icon" showCloseButton={false}>
           {/* Sin esto la consola retorna errores. */}
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="contact" onClose={closeDialog}>
-            {/* contenido */}
-            <div>Contenido de Contacto...</div>
+            <ContactMe />
           </WindowComponent>
         </DialogContent>
       </Dialog>

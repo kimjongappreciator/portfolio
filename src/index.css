@@ -118,7 +118,7 @@
   }
 
   .explorer-bar-button{
-    @apply w-6 h-6 bg-[#c0c0c0] text-black text-xs font-bold
+    @apply w-8 h-8 bg-[#c0c0c0] text-black text-xs font-light
             border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080]
             hover:border-t-[#dfdfdf] hover:border-l-[#dfdfdf] hover:border-r-[#404040] hover:border-b-[#404040]
             active:border-t-[#808080] active:border-l-[#808080] active:border-r-white active:border-b-white

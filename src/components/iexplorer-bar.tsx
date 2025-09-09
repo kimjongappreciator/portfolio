@@ -1,6 +1,6 @@
 import { useT } from "@/store/i18n";
 
-export function ExplorerBar({route}: {route?: string}) {
+export function IExplorerBar({route}: {route?: string}) {
   const t = useT();
   return (
     <div className="win-raised p-1">
@@ -18,49 +18,41 @@ export function ExplorerBar({route}: {route?: string}) {
         </button>
         
         <button className="explorer-bar-button" title={t?.("stop") || "Stop"}>
-          up
+          ✕
         </button>
         
-        <div className="w-px h-5 bg-[#808080] shadow-[1px_0_0_0_white] mx-1"></div>
-
         <button
           className="explorer-bar-button"
           title={t?.("refresh") || "Refresh"}
         >
-          cut
+          ↻
         </button>
         
         <button className="explorer-bar-button" title={t?.("home") || "Home"}>
-          copy
+          🏠
         </button>
-               
+        
+        <div className="w-px h-5 bg-[#808080] shadow-[1px_0_0_0_white] mx-1"></div>
+        
         <button
           className="explorer-bar-button"
           title={t?.("search") || "Search"}
         >
-          paste
+          🔍
         </button>
         
         <button
           className="explorer-bar-button"
           title={t?.("history") || "History"}
         >
-          undo
+          📋
         </button>
         
-        <div className="w-px h-5 bg-[#808080] shadow-[1px_0_0_0_white] mx-1"></div>
-
         <button
           className="explorer-bar-button"
           title={t?.("favorites") || "Favorites"}
         >
-          Delete
-        </button>
-        <button
-          className="explorer-bar-button"
-          title={t?.("favorites") || "Favorites"}
-        >
-          Properties
+          ⭐
         </button>
       </div>
 

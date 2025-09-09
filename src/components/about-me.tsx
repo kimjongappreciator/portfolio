@@ -1,5 +1,5 @@
 import { useT } from "@/store/i18n";
-import { ExplorerBar } from "./explorer-bar";
+import { IExplorerBar } from "./iexplorer-bar";
 
 export function AboutMe() {
   const t = useT();
@@ -15,7 +15,7 @@ export function AboutMe() {
 
   return (
     <div className="w-full max-h-[60vh] flex flex-col bg-[#c0c0c0]">
-      <ExplorerBar route="https://www.sebastian-chacon.com/about-me"/>
+      <IExplorerBar route="https://www.sebastian-chacon.com/about-me"/>
       
       <div className="flex-1 overflow-auto p-4 bg-white">
         <div className="max-w-4xl mx-auto">
