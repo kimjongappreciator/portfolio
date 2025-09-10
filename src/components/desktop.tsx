@@ -7,7 +7,7 @@ import html_icon from "@/assets/desktop-icons/html.png";
 import { AboutMe } from "./about-me";
 import { ContactMe } from "./contact-me";
 import { MyProjects } from "./my-projects";
-import { DesktopIcon } from "./desktop-icon";
+import { Icon } from "./icon";
 
 
 
@@ -25,20 +25,23 @@ export function Desktop() {
   return (
     <div className="h-screen w-screen bg-[var(--desktop-bg)] p-4">
       <div className="grid grid-cols-6 gap-6">
-        <DesktopIcon
+        <Icon
           icon={html_icon}
           label="about"
           onClick={() => handleIconClick("about")}
+          iconType="desktop"
         />
-        <DesktopIcon
+        <Icon
           icon={folder}
           label="projects"
           onClick={() => handleIconClick("projects")}
+          iconType="desktop"
         />
-        <DesktopIcon
+        <Icon
           icon={note_pad}
           label="contact"
           onClick={() => handleIconClick("contact")}
+          iconType="desktop"
         />
       </div>
 
