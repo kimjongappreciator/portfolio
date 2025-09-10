@@ -23,6 +23,8 @@
   "cut": "Cut",
   "copy": "Copy",
   "paste": "Paste",
+  "delete": "Delete",
+  "properties": "Properties",
     
   "toolbar": "Toolbar",
   "status_bar": "Status Bar",
@@ -53,11 +55,20 @@
   "about_me_title": "About Me",
   
   "about_me_intro": "Hello! I'm Sebastián Chacón, a software engineer with Full Stack development experience.",
-  "about_me_experience": "I have 3 years of experience, during which I've developed web and mobile applications, scalable APIs, and artificial intelligence research projects, including an LSTM-based system for real-time Peruvian Sign Language translation, published in IEEE.",
+  "about_me_experience": "I have 3 years of experience, during which I've developed web and mobile applications, scalable APIs, and artificial intelligence research projects, including an LSTM-based system for real-time Peruvian Sign Language translation.",
   "about_me_stack": "My tech stack includes:",
   "about_me_interests": "I'm particularly interested in applied artificial intelligence, cybersecurity, and the design of inclusive solutions with social impact. I'm also passionate about humanities, which allows me to integrate a critical and ethical perspective into technological development.",
   "about_me_values": "I value continuous learning, team collaboration, and developing technology that can improve people's lives.",
 
-  "contact_me_title": "You can find me at:"
+  "contact_me_title": "You can find me at:",
+
+
+  "montly_expenses": "Personal Finance app",
+  "three_demo": "Water Sim",
+  "kanban_board": "Kanban Board",
+  "graph_demo": "Function Grapher",
+  "signapp": "Sign Language Translator",
+  "weather_app": "Reactive Weather App UI",
+  "creds_updt": "Password Updater"
   
 }

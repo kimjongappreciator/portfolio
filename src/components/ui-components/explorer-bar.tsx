@@ -7,60 +7,60 @@ export function ExplorerBar({route}: {route?: string}) {
       <div className="flex items-center gap-1 mb-2">
         
         <button className="explorer-bar-button" title={t?.("back") || "Back"}>
-          ←
+          ◀️
         </button>
         
         <button
           className="explorer-bar-button"
           title={t?.("forward") || "Forward"}
         >
-          →
+          ▶️
         </button>
         
-        <button className="explorer-bar-button" title={t?.("stop") || "Stop"}>
-          up
+        <button className="explorer-bar-button" title={t?.("up") || "Up"}>
+          ⬆️
         </button>
         
         <div className="w-px h-5 bg-[#808080] shadow-[1px_0_0_0_white] mx-1"></div>
 
         <button
           className="explorer-bar-button"
-          title={t?.("refresh") || "Refresh"}
+          title={t?.("cut") || "Cut"}
         >
-          cut
+          ✂️
         </button>
         
-        <button className="explorer-bar-button" title={t?.("home") || "Home"}>
-          copy
+        <button className="explorer-bar-button" title={t?.("copy") || "Cpoy"}>
+          📄
         </button>
                
         <button
           className="explorer-bar-button"
-          title={t?.("search") || "Search"}
+          title={t?.("paste") || "Paste"}
         >
-          paste
+          📋
         </button>
         
         <button
           className="explorer-bar-button"
-          title={t?.("history") || "History"}
+          title={t?.("undo") || "Undo"}
         >
-          undo
+          ↶
         </button>
         
         <div className="w-px h-5 bg-[#808080] shadow-[1px_0_0_0_white] mx-1"></div>
 
         <button
           className="explorer-bar-button"
-          title={t?.("favorites") || "Favorites"}
+          title={t?.("delete") || "Delete"}
         >
-          Delete
+          ❌
         </button>
         <button
           className="explorer-bar-button"
-          title={t?.("favorites") || "Favorites"}
+          title={t?.("properties") || "Properties"}
         >
-          Properties
+          🛠️
         </button>
       </div>
 

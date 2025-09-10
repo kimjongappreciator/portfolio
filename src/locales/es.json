@@ -22,6 +22,8 @@
   "cut": "Cortar",
   "copy": "Copiar",
   "paste": "Pegar",
+  "delete": "Eliminar",
+  "properties": "Propiedades",
     
   "toolbar": "Barra de herramientas",
   "status_bar": "Barra de estado",
@@ -56,6 +58,15 @@
   "about_me_interests": "Estoy particularmente interesado en la inteligencia artificial aplicada, la ciberseguridad y el diseño de soluciones inclusivas con impacto social. Además, me apasiona el estudio de las humanidades, lo cual me permite integrar una perspectiva crítica y ética en el desarrollo tecnológico.",
   "about_me_values": "Valoro el aprendizaje continuo, la colaboración en equipo y el desarrollo de tecnología que pueda mejorar la vida de las personas.",
 
-  "contact_me_title": "Puedes encontrarme en:"
+  "contact_me_title": "Puedes encontrarme en:",
+
+
+  "montly_expenses": "App de Finanzas Personales",
+  "three_demo": "Simulador de agua",
+  "kanban_board": "Tablero Kanban",
+  "graph_demo": "Graficadora de funciones",
+  "signapp": "Traducción de Lengua de Señas",
+  "weather_app": "App del clima",
+  "creds_updt": "Actualizador de contraseñas"
   
 }

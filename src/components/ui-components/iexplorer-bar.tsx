@@ -1,6 +1,5 @@
 import { useT } from "@/store/i18n";
-import back from "@/assets/explorer-bar/back.bmp";
-import forward from "@/assets/explorer-bar/forward.bmp";
+
 
 export function IExplorerBar({route}: {route?: string}) {
   const t = useT();
@@ -9,18 +8,18 @@ export function IExplorerBar({route}: {route?: string}) {
       <div className="flex items-center gap-1 mb-2">
         
         <button className="explorer-bar-button" title={t?.("back") || "Back"}>
-          <img src={back} alt="Back" className="w-fit" />
+          ◀️
         </button>
         
         <button
           className="explorer-bar-button"
           title={t?.("forward") || "Forward"}
         >
-          <img src={forward} alt="Forward" className="w-fit" />
+          ▶️
         </button>
         
         <button className="explorer-bar-button" title={t?.("stop") || "Stop"}>
-          ✕
+          ❌
         </button>
         
         <button

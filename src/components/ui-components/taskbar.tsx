@@ -1,7 +1,7 @@
 import { ClockComponent } from "./clock";
 import { StartMenu } from "./start-menu";
-import { Button } from "./ui/button";
-import { Popover, PopoverTrigger, PopoverContent } from "./ui/popover";
+import { Button } from "../ui/button";
+import { Popover, PopoverTrigger, PopoverContent } from "../ui/popover";
 import { useT, useI18nStore } from "@/store/i18n";
 import startIcon from "@/assets/start-menu-icons/start_icon.png";
 
