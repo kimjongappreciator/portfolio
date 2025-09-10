@@ -5,6 +5,13 @@ import folder from "@/assets/desktop-icons/folder.png";
 import html_icon from "@/assets/desktop-icons/html.png";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { WindowComponent } from "./window";
+import { CredsUpdate } from "./projects/creds-update";
+import { Finance } from "./projects/finance";
+import { OceanSim } from "./projects/ocean-sim";
+import { Kanban } from "./projects/kanban";
+import { Grapher } from "./projects/grapher";
+import { SignApp } from "./projects/signapp";
+import { WeatherApp } from "./projects/weather";
 
 export function MyProjects() {
   const [activeDialog, setActiveDialog] = useState(null);
@@ -73,7 +80,7 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="montly_expenses" onClose={closeDialog}>
-            jijijija
+            <Finance />
           </WindowComponent>
         </DialogContent>
       </Dialog>
@@ -82,57 +89,52 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="three_demo" onClose={closeDialog}>
-            jijijija
+            <OceanSim />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "kanban_board"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>
-          {/* Sin esto la consola retorna errores. */}
+        <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="kanban_board" onClose={closeDialog}>
-            jijijija
+            <Kanban />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "graph_demo"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>
-          {/* Sin esto la consola retorna errores. */}
+        <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="graph_demo" onClose={closeDialog}>
-            jijijija
+            <Grapher />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "signapp"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>
-          {/* Sin esto la consola retorna errores. */}
+        <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="signapp" onClose={closeDialog}>
-            jijijija
+            <SignApp />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "weather_app"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>
-          {/* Sin esto la consola retorna errores. */}
+        <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="weather_app" onClose={closeDialog}>
-            jijijija
+            <WeatherApp />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "creds_updt"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>
-          {/* Sin esto la consola retorna errores. */}
+        <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="creds_updt" onClose={closeDialog}>
-            jijijija
+            <CredsUpdate />
           </WindowComponent>
         </DialogContent>
       </Dialog>
