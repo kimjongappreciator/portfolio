@@ -1,4 +1,4 @@
-import { IExplorerBar } from "../iexplorer-bar";
+import { IExplorerBar } from "../ui-components/iexplorer-bar";
 
 export function WeatherApp() {
   return (

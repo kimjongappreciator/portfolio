@@ -1,17 +1,17 @@
 import { useState } from "react";
-import { Icon } from "./icon";
-import { ExplorerBar } from "./explorer-bar";
+import { Icon } from "../ui-components/icon";
+import { ExplorerBar } from "../ui-components/explorer-bar";
 import folder from "@/assets/desktop-icons/folder.png";
 import html_icon from "@/assets/desktop-icons/html.png";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import { WindowComponent } from "./window";
-import { CredsUpdate } from "./projects/creds-update";
-import { Finance } from "./projects/finance";
-import { OceanSim } from "./projects/ocean-sim";
-import { Kanban } from "./projects/kanban";
-import { Grapher } from "./projects/grapher";
-import { SignApp } from "./projects/signapp";
-import { WeatherApp } from "./projects/weather";
+import { WindowComponent } from "../ui-components/window";
+import { CredsUpdate } from "../projects/creds-update";
+import { Finance } from "../projects/finance";
+import { OceanSim } from "../projects/ocean-sim";
+import { Kanban } from "../projects/kanban";
+import { Grapher } from "../projects/grapher";
+import { SignApp } from "../projects/signapp";
+import { WeatherApp } from "../projects/weather";
 
 export function MyProjects() {
   const [activeDialog, setActiveDialog] = useState(null);

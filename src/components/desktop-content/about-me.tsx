@@ -1,5 +1,6 @@
 import { useT } from "@/store/i18n";
-import { IExplorerBar } from "./iexplorer-bar";
+import { IExplorerBar } from "../ui-components/iexplorer-bar";
+
 
 export function AboutMe() {
   const t = useT();

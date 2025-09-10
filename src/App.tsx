@@ -1,4 +1,4 @@
-import { Taskbar } from "./components/taskbar";
+import { Taskbar } from "./components/ui-components/taskbar";
 import { Desktop } from "./components/desktop";
 
 function App() { 
