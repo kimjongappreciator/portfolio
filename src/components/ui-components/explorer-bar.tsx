@@ -54,13 +54,13 @@ export function ExplorerBar({route}: {route?: string}) {
           className="explorer-bar-button"
           title={t?.("delete") || "Delete"}
         >
-          🗑️
+          ❌
         </button>
         <button
           className="explorer-bar-button"
           title={t?.("properties") || "Properties"}
         >
-          ⚙️
+          🛠️
         </button>
       </div>
 

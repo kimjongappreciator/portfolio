@@ -23,6 +23,8 @@
   "cut": "Cut",
   "copy": "Copy",
   "paste": "Paste",
+  "delete": "Delete",
+  "properties": "Properties",
     
   "toolbar": "Toolbar",
   "status_bar": "Status Bar",

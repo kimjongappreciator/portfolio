@@ -22,6 +22,8 @@
   "cut": "Cortar",
   "copy": "Copiar",
   "paste": "Pegar",
+  "delete": "Eliminar",
+  "properties": "Propiedades",
     
   "toolbar": "Barra de herramientas",
   "status_bar": "Barra de estado",
