@@ -67,6 +67,6 @@
   "graph_demo": "Function Grapher",
   "signapp": "Sign Language Translator",
   "weather_app": "Reactive Weather App UI",
-  "cambio_unmsm": "UNMSM Credential Updater"
+  "creds_updt": "Password Updater"
   
 }

@@ -117,6 +117,10 @@
     @apply p-0 m-0 border-0 bg-transparent shadow-none max-w-none w-auto h-auto;
   }
 
+  .dialog-component{
+    @apply p-0 m-0 border-0 bg-transparent shadow-none max-w-none w-auto h-auto;
+  }
+
   .explorer-bar-button{
     @apply w-8 h-8 bg-[#c0c0c0] text-black text-xs font-light
             border-2 border-t-white border-l-white border-r-[#808080] border-b-[#808080]
