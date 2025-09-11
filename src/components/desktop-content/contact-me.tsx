@@ -9,7 +9,7 @@ export function ContactMe() {
       <ul className="list-disc list-inside space-y-2">
         <li>
           <a
-            href="https://www.linkedin.com/in/sebastian-chacon/"
+            href="https://www.linkedin.com/in/sebastian-chacon-cordova-a83477151/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"

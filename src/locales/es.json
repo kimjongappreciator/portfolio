@@ -62,11 +62,24 @@
 
 
   "montly_expenses": "App de Finanzas Personales",
-  "three_demo": "Simulador de agua",
-  "kanban_board": "Tablero Kanban",
-  "graph_demo": "Graficadora de funciones",
-  "signapp": "Traducción de Lengua de Señas",
-  "weather_app": "App del clima",
-  "creds_updt": "Actualizador de contraseñas"
+  "montly_expenses_description": "Aplicación para registrar y visualizar ingresos y gastos mensuales. Los datos y el estado de la sesión se almacenan de forma persistente en el almacenamiento del navegador. Incluye soporte para tema claro y oscuro.",
   
+  "three_demo": "Simulador de agua",
+  "three_demo_description": "Demostración interactiva de simulación de agua en 3D con colisión y ruido simulado.",
+  
+  "kanban_board": "Tablero Kanban",
+  "kanban_board_description": "Tablero interactivo para gestionar tareas en columnas con soporte de arrastrar y soltar.",
+  
+  "graph_demo": "Graficadora de funciones",
+  "graph_demo_description": "Herramienta para graficar funciones matemáticas en un lienzo interactivo.",
+  
+  "signapp": "Traducción de Lengua de Señas",
+  "signapp_description": "Aplicación movil que traduce gestos de la Lengua de Señas Peruana a texto en tiempo real.",
+  
+  "weather_app": "App del clima",
+  "weather_app_description": "Interfaz gráfica que modifica su esquema de colores según las condiciones climáticas. Actualmente utiliza datos simulados para evitar dependencias externas, pero admite integración con fuentes en tiempo real.",
+  
+  "creds_updt": "Actualizador de contraseñas",
+  "creds_updt_description": "Interfaz para actualizar credenciales con validación y confirmación de seguridad.",
+  "creds_updt_git": "Projecto Privado"
 }

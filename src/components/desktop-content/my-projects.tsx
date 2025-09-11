@@ -5,13 +5,18 @@ import folder from "@/assets/desktop-icons/folder.png";
 import html_icon from "@/assets/desktop-icons/html.png";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { WindowComponent } from "../ui-components/window";
-import { CredsUpdate } from "../projects/creds-update";
-import { Finance } from "../projects/finance";
-import { OceanSim } from "../projects/ocean-sim";
-import { Kanban } from "../projects/kanban";
-import { Grapher } from "../projects/grapher";
-import { SignApp } from "../projects/signapp";
-import { WeatherApp } from "../projects/weather";
+import { ProjectDialog } from "../projects/project-dialog";
+import type { ContentModel } from "../models/content-model";
+import { credsUpdtData, financeData, graphDemoData, kanbanData, signAppData, threeDemoData, weatherAppData } from "../models/project-data";
+
+const financeContent: ContentModel =financeData;
+const threeDemoContent: ContentModel =threeDemoData;
+const credsupdtContent: ContentModel =credsUpdtData;
+const graphDemoContent: ContentModel =graphDemoData;
+const kanbanContent: ContentModel =kanbanData;
+const weatherContent: ContentModel = weatherAppData;
+const signappContent: ContentModel = signAppData;
+
 
 export function MyProjects() {
   const [activeDialog, setActiveDialog] = useState(null);
@@ -80,7 +85,7 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="montly_expenses" onClose={closeDialog}>
-            <Finance />
+            <ProjectDialog {...financeContent}/>
           </WindowComponent>
         </DialogContent>
       </Dialog>
@@ -89,7 +94,7 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="three_demo" onClose={closeDialog}>
-            <OceanSim />
+            <ProjectDialog {...threeDemoContent}/>
           </WindowComponent>
         </DialogContent>
       </Dialog>
@@ -98,7 +103,7 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="kanban_board" onClose={closeDialog}>
-            <Kanban />
+            <ProjectDialog {...kanbanContent}/>
           </WindowComponent>
         </DialogContent>
       </Dialog>
@@ -107,7 +112,7 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="graph_demo" onClose={closeDialog}>
-            <Grapher />
+            <ProjectDialog {...graphDemoContent}/>
           </WindowComponent>
         </DialogContent>
       </Dialog>
@@ -116,7 +121,7 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="signapp" onClose={closeDialog}>
-            <SignApp />
+            <ProjectDialog {...signappContent}/>
           </WindowComponent>
         </DialogContent>
       </Dialog>
@@ -125,7 +130,7 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="weather_app" onClose={closeDialog}>
-            <WeatherApp />
+            <ProjectDialog {...weatherContent}/>
           </WindowComponent>
         </DialogContent>
       </Dialog>
@@ -134,7 +139,7 @@ export function MyProjects() {
         <DialogContent className="dialog-component" showCloseButton={false}>          
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="creds_updt" onClose={closeDialog}>
-            <CredsUpdate />
+            <ProjectDialog {...credsupdtContent}/>
           </WindowComponent>
         </DialogContent>
       </Dialog>

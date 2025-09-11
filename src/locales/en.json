@@ -63,12 +63,25 @@
   "contact_me_title": "You can find me at:",
 
 
-  "montly_expenses": "Personal Finance app",
-  "three_demo": "Water Sim",
-  "kanban_board": "Kanban Board",
-  "graph_demo": "Function Grapher",
-  "signapp": "Sign Language Translator",
-  "weather_app": "Reactive Weather App UI",
-  "creds_updt": "Password Updater"
+  "montly_expenses": "Personal Finance App",
+  "montly_expenses_description": "Application to record and visualize monthly income and expenses. Data and session state are stored persistently using browser storage. Includes support for light and dark themes.",
   
+  "three_demo": "Water Simulator",
+  "three_demo_description": "Interactive 3D water simulation demo with collision and noise effects.",
+  
+  "kanban_board": "Kanban Board",
+  "kanban_board_description": "Interactive board to manage tasks in columns with drag-and-drop support.",
+  
+  "graph_demo": "Function Grapher",
+  "graph_demo_description": "Tool to plot mathematical functions on an interactive canvas.",
+  
+  "signapp": "Sign Language Translation",
+  "signapp_description": "Mobile App that translates Peruvian Sign Language gestures into text in real time.",
+  
+  "weather_app": "Weather App",
+  "weather_app_description": "Graphical interface that adapts its color scheme based on weather conditions. It currently uses simulated data to avoid external dependencies but supports integration with real-time data sources.",
+  
+  "creds_updt": "Password Updater",
+  "creds_updt_description": "Interface and rest api to update credentials with validation and security confirmation.",
+  "creds_updt_git": "Closed Source"
 }
