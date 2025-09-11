@@ -56,9 +56,9 @@ export const weatherAppData: ContentModel = {
 
 export const signAppData: ContentModel = {
   description: "signapp_description",
-  github: "https://github.com/kimjongappreciator/keypoints-web",
-  demo: "Not live",
+  github: "https://github.com/kimjongappreciator/keypoints-web",  
   stack: ["Flutter 💙", "MediaPipe ✋", "Flask ⚗️", "Python 🐍", "MongoDB 🍃"],
   path: "/signapp",
-  pic:"https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/signapp.png"
+  pic:"https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/signapp.png",
+  extra: "https://ieeexplore.ieee.org/document/10819223"
 };

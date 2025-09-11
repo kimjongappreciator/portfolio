@@ -70,13 +70,13 @@
   "three_demo_description": "Interactive 3D water simulation demo with collision and noise effects.",
   
   "kanban_board": "Kanban Board",
-  "kanban_board_description": "Interactive board to manage tasks in columns with drag-and-drop support.",
+  "kanban_board_description": "Interactive board to manage tasks in columns with drag-and-drop support. It also supports theming",
   
   "graph_demo": "Function Grapher",
   "graph_demo_description": "Tool to plot mathematical functions on an interactive canvas.",
   
   "signapp": "Sign Language Translation",
-  "signapp_description": "Mobile application that translates Peruvian Sign Language gestures into text in real time. The frontend connects to the backend via Socket.IO, sending raw images that are preprocessed and grouped into a sequence of movements. This sequence is then processed by an LSTM model that returns an approximate translation.",
+  "signapp_description": "Mobile application that translates Peruvian Sign Language gestures into text in real time. The frontend connects to the backend via Socket.IO, sending raw images that are preprocessed and grouped into a sequence of movements. This sequence is then processed by an LSTM model that returns an approximate translation.",  
 
   
   "weather_app": "Weather App",

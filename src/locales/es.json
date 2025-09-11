@@ -68,13 +68,13 @@
   "three_demo_description": "Demostración interactiva de simulación de agua en 3D con colisión y ruido simulado.",
   
   "kanban_board": "Tablero Kanban",
-  "kanban_board_description": "Tablero interactivo para gestionar tareas en columnas con soporte de arrastrar y soltar.",
+  "kanban_board_description": "Tablero interactivo para gestionar tareas en columnas con soporte de arrastrar y soltar. Tambien tiene soporte para temas",
   
   "graph_demo": "Graficadora de funciones",
   "graph_demo_description": "Herramienta para graficar funciones matemáticas en un lienzo interactivo.",
   
   "signapp": "Traducción de Lengua de Señas",
-  "signapp_description": "Aplicación móvil que traduce gestos de la Lengua de Señas Peruana a texto en tiempo real. El frontend se conecta con el backend mediante Socket.IO, enviando imágenes en bruto que son preprocesadas y agrupadas en una secuencia de movimientos. Esa secuencia luego se procesa con un modelo LSTM que devuelve una traducción aproximada.",
+  "signapp_description": "Aplicación móvil que traduce gestos de la Lengua de Señas Peruana a texto en tiempo real. El frontend se conecta con el backend mediante Socket.IO, enviando imágenes en bruto que son preprocesadas y agrupadas en una secuencia de movimientos. Esa secuencia luego se procesa con un modelo LSTM que devuelve una traducción aproximada.",    
   
   "weather_app": "App del clima",
   "weather_app_description": "Interfaz gráfica que modifica su esquema de colores según las condiciones climáticas. Actualmente utiliza datos simulados para evitar dependencias externas, pero admite integración con fuentes en tiempo real.",
