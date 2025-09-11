@@ -7,7 +7,7 @@ export function ProjectDialog(content: ContentModel) {
 
   return (
     <div className="w-full max-h-[60vh] flex flex-col bg-[#c0c0c0] border border-black">
-      <IExplorerBar route="https://www.sebastian-chacon.com/about-me" />
+      <IExplorerBar route={`https://www.sebastian-chacon.com${content.path}`} />
 
       <div className="flex-1 overflow-auto p-4 bg-white text-black font-sans text-sm">
         <h1 className="text-lg font-bold mb-2"></h1>

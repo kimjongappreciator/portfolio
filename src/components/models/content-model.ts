@@ -3,4 +3,5 @@ export type ContentModel = {
   github: string;
   demo: string;
   stack: string[];
+  path: string;
 };

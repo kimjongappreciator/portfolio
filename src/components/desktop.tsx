@@ -9,12 +9,13 @@ import { ContactMe } from "./desktop-content/contact-me";
 import { MyProjects } from "./desktop-content/my-projects";
 import { Icon } from "./ui-components/icon";
 
+type DialogType = "about" | "projects" | "contact" | null;
 
 
 export function Desktop() {
-  const [activeDialog, setActiveDialog] = useState(null);
+  const [activeDialog, setActiveDialog] = useState<DialogType>(null);
 
-  const handleIconClick = (dialogType: any) => {
+  const handleIconClick = (dialogType: Exclude<DialogType,null>) => {
     setActiveDialog(dialogType);
   };
 

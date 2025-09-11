@@ -82,6 +82,6 @@
   "weather_app_description": "Graphical interface that adapts its color scheme based on weather conditions. It currently uses simulated data to avoid external dependencies but supports integration with real-time data sources.",
   
   "creds_updt": "Password Updater",
-  "creds_updt_description": "Interface and rest api to update credentials with validation and security confirmation.",
-  "creds_updt_git": "Closed Source"
+  "creds_updt_description": "Interface and rest api to update credentials with validation and security confirmation."  
+  
 }

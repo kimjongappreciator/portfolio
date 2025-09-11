@@ -7,21 +7,38 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { WindowComponent } from "../ui-components/window";
 import { ProjectDialog } from "../projects/project-dialog";
 import type { ContentModel } from "../models/content-model";
-import { credsUpdtData, financeData, graphDemoData, kanbanData, signAppData, threeDemoData, weatherAppData } from "../models/project-data";
+import {
+  credsUpdtData,
+  financeData,
+  graphDemoData,
+  kanbanData,
+  signAppData,
+  threeDemoData,
+  weatherAppData,
+} from "../models/project-data";
 
-const financeContent: ContentModel =financeData;
-const threeDemoContent: ContentModel =threeDemoData;
-const credsupdtContent: ContentModel =credsUpdtData;
-const graphDemoContent: ContentModel =graphDemoData;
-const kanbanContent: ContentModel =kanbanData;
+const financeContent: ContentModel = financeData;
+const threeDemoContent: ContentModel = threeDemoData;
+const credsupdtContent: ContentModel = credsUpdtData;
+const graphDemoContent: ContentModel = graphDemoData;
+const kanbanContent: ContentModel = kanbanData;
 const weatherContent: ContentModel = weatherAppData;
 const signappContent: ContentModel = signAppData;
 
+type DialogType =
+  | "montly_expenses"
+  | "three_demo"
+  | "kanban_board"
+  | "graph_demo"
+  | "signapp"
+  | "weather_app"
+  | "creds_updt"
+  | null;
 
 export function MyProjects() {
-  const [activeDialog, setActiveDialog] = useState(null);
+  const [activeDialog, setActiveDialog] = useState<DialogType>(null);
 
-  const handleIconClick = (dialogType: any) => {
+  const handleIconClick = (dialogType: Exclude<DialogType, null>) => {
     setActiveDialog(dialogType);
   };
 
@@ -81,65 +98,68 @@ export function MyProjects() {
         </div>
       </div>
 
-      <Dialog open={activeDialog === "montly_expenses"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>          
+      <Dialog
+        open={activeDialog === "montly_expenses"}
+        onOpenChange={closeDialog}
+      >
+        <DialogContent className="dialog-component" showCloseButton={false}>
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="montly_expenses" onClose={closeDialog}>
-            <ProjectDialog {...financeContent}/>
+            <ProjectDialog {...financeContent} />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "three_demo"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>          
+        <DialogContent className="dialog-component" showCloseButton={false}>
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="three_demo" onClose={closeDialog}>
-            <ProjectDialog {...threeDemoContent}/>
+            <ProjectDialog {...threeDemoContent} />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "kanban_board"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>          
+        <DialogContent className="dialog-component" showCloseButton={false}>
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="kanban_board" onClose={closeDialog}>
-            <ProjectDialog {...kanbanContent}/>
+            <ProjectDialog {...kanbanContent} />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "graph_demo"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>          
+        <DialogContent className="dialog-component" showCloseButton={false}>
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="graph_demo" onClose={closeDialog}>
-            <ProjectDialog {...graphDemoContent}/>
+            <ProjectDialog {...graphDemoContent} />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "signapp"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>          
+        <DialogContent className="dialog-component" showCloseButton={false}>
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="signapp" onClose={closeDialog}>
-            <ProjectDialog {...signappContent}/>
+            <ProjectDialog {...signappContent} />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "weather_app"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>          
+        <DialogContent className="dialog-component" showCloseButton={false}>
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="weather_app" onClose={closeDialog}>
-            <ProjectDialog {...weatherContent}/>
+            <ProjectDialog {...weatherContent} />
           </WindowComponent>
         </DialogContent>
       </Dialog>
 
       <Dialog open={activeDialog === "creds_updt"} onOpenChange={closeDialog}>
-        <DialogContent className="dialog-component" showCloseButton={false}>          
+        <DialogContent className="dialog-component" showCloseButton={false}>
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="creds_updt" onClose={closeDialog}>
-            <ProjectDialog {...credsupdtContent}/>
+            <ProjectDialog {...credsupdtContent} />
           </WindowComponent>
         </DialogContent>
       </Dialog>
