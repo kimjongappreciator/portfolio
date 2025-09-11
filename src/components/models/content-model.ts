@@ -1,6 +1,6 @@
 export type ContentModel = {  
   description: string;  
-  github: string;
+  github?: string;
   demo?: string;
   stack: string[];
   path: string;

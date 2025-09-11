@@ -19,8 +19,7 @@ export const threeDemoData: ContentModel = {
 };
 
 export const credsUpdtData: ContentModel = {
-  description: "creds_updt_description",
-  github: "Closed Source",
+  description: "creds_updt_description",  
   demo: "https://webmail.unmsm.edu.pe/",
   stack: ["Angular 🔺", "Angular Material 🎨", "Java ☕", "Spring 🌱", "LDAP 🗂️", "Google APIs 🔑"],
   path: "/creds_updt",

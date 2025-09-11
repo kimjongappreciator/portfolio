@@ -53,6 +53,7 @@ export function ProjectDialog(content: ContentModel) {
               </a>
             </p>
           )}
+          {content.github &&
           <p className="flex items-center gap-2">
             <span>🔗</span>
             <a
@@ -61,7 +62,7 @@ export function ProjectDialog(content: ContentModel) {
             >
               GitHub
             </a>
-          </p>
+          </p>}
           {content.demo && (
             <p className="flex items-center gap-2">
               <span>🌐</span>
