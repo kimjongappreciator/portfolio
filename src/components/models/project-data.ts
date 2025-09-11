@@ -23,7 +23,8 @@ export const credsUpdtData: ContentModel = {
   github: "Closed Source",
   demo: "https://webmail.unmsm.edu.pe/",
   stack: ["Angular 🔺", "Angular Material 🎨", "Java ☕", "Spring 🌱", "LDAP 🗂️", "Google APIs 🔑"],
-  path: "/creds_updt"
+  path: "/creds_updt",
+  pic: "https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/creds-update.jpg"
 };
 
 export const graphDemoData: ContentModel = {
@@ -31,7 +32,8 @@ export const graphDemoData: ContentModel = {
   github: "https://github.com/kimjongappreciator/graph-demo",
   demo: "https://kimjongappreciator.github.io/graph-demo/",
   stack: ["React ⚛️", "Tailwind 🌬️", "Shadcn 🎛️", "Plotly.js 📊", "Math.js ➗"],
-  path: "/grapher"
+  path: "/grapher",
+  pic: "https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/grapher.jpg"
 };
 
 export const kanbanData: ContentModel = {
@@ -39,7 +41,8 @@ export const kanbanData: ContentModel = {
   github: "https://github.com/kimjongappreciator/kanban-react",
   demo: "https://kimjongappreciator.github.io/kanban-react/",
   stack: ["React ⚛️", "Tailwind 🌬️", "Zustand 🐻", "Shadcn 🎛️", "React DND 🧩"],
-  path: "/kanban"
+  path: "/kanban",
+  pic:"https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/kanban.jpg"
 };
 
 export const weatherAppData: ContentModel = {
@@ -47,7 +50,8 @@ export const weatherAppData: ContentModel = {
   github: "https://github.com/kimjongappreciator/react-weather-sample",
   demo: "https://kimjongappreciator.github.io/react-weather-sample/",
   stack: ["React ⚛️", "Tailwind 🌬️", "Shadcn 🎛️"],
-  path: "/weather"
+  path: "/weather",
+  pic:"https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/weather.jpg"
 };
 
 export const signAppData: ContentModel = {
@@ -55,5 +59,6 @@ export const signAppData: ContentModel = {
   github: "https://github.com/kimjongappreciator/keypoints-web",
   demo: "Not live",
   stack: ["Flutter 💙", "MediaPipe ✋", "Flask ⚗️", "Python 🐍", "MongoDB 🍃"],
-  path: "/signapp"
+  path: "/signapp",
+  pic:"https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/signapp.png"
 };

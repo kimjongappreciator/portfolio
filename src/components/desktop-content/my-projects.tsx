@@ -16,6 +16,7 @@ import {
   threeDemoData,
   weatherAppData,
 } from "../models/project-data";
+import { useT } from "@/store/i18n";
 
 const financeContent: ContentModel = financeData;
 const threeDemoContent: ContentModel = threeDemoData;
@@ -46,6 +47,8 @@ export function MyProjects() {
     setActiveDialog(null);
   };
 
+  const t = useT();
+
   return (
     <>
       <div className="w-auto h-[60vh] max-h-[60vh] flex flex-col">
@@ -56,7 +59,10 @@ export function MyProjects() {
             <h2 className="text-lg font-semibold m-4">My Projects</h2>
           </div>
           <div className="flex-1 overflow-auto">
-            <a>Nota: estos son solo proyectos publicos.</a>
+            <div className="p-2">
+              <a>{t("projects_disclaimer")}</a>
+            </div>
+
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 p-4">
               <Icon
                 icon={html_icon}

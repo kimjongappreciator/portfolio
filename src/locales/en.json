@@ -76,12 +76,15 @@
   "graph_demo_description": "Tool to plot mathematical functions on an interactive canvas.",
   
   "signapp": "Sign Language Translation",
-  "signapp_description": "Mobile App that translates Peruvian Sign Language gestures into text in real time.",
+  "signapp_description": "Mobile application that translates Peruvian Sign Language gestures into text in real time. The frontend connects to the backend via Socket.IO, sending raw images that are preprocessed and grouped into a sequence of movements. This sequence is then processed by an LSTM model that returns an approximate translation.",
+
   
   "weather_app": "Weather App",
   "weather_app_description": "Graphical interface that adapts its color scheme based on weather conditions. It currently uses simulated data to avoid external dependencies but supports integration with real-time data sources.",
   
   "creds_updt": "Password Updater",
-  "creds_updt_description": "Interface and rest api to update credentials with validation and security confirmation."  
+  "creds_updt_description": "Interface and rest api to update credentials with validation and security confirmation." ,
   
+  "projects_disclaimer": "These are just the public projects. Most of them have the code available, except one that belongs to an institution."
+
 }

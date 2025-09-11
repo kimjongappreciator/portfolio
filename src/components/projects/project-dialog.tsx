@@ -10,35 +10,44 @@ export function ProjectDialog(content: ContentModel) {
       <IExplorerBar route={`https://www.sebastian-chacon.com${content.path}`} />
 
       <div className="flex-1 overflow-auto p-4 bg-white text-black font-sans text-sm">
-        <h1 className="text-lg font-bold mb-2"></h1>
-
-        <div className="flex gap-4 mb-4">          
-          <div className="w-40 h-28 bg-[#e0e0e0] border border-black flex items-center justify-center text-xs">
-            <img src={content.pic} alt="Project Image" className="w-full h-full object-cover" />
-          </div>
+        <h1 className="text-lg font-bold mb-2"></h1>        
+        
+        <div className="flex flex-col sm:flex-row gap-4 mb-4">          
           
-          <p className="leading-relaxed">{t(content.description)}</p>
+          <div className="flex-shrink-0 w-full sm:w-48 md:w-56 lg:w-64">
+            <div className="aspect-video bg-[#e0e0e0] border border-black overflow-hidden">
+              <img 
+                src={content.pic} 
+                alt="Project Image" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-200" 
+              />
+            </div>
+          </div>
+                    
+          <div className="flex-1 min-w-0">
+            <p className="leading-relaxed text-justify">{t(content.description)}</p>
+          </div>
         </div>
 
         <div className="mb-4">
           <a className="font-bold underline">Stack</a>
-          <ul className="list-disc list-inside space-y-1">
+          <ul className="list-disc list-inside space-y-1 mt-2">
             {content.stack.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index} className="text-sm">{item}</li>
             ))}
           </ul>
         </div>
 
-        <div className="space-y-1">
-          <p>
-            🔗{" "}
-            <a href={content.github} className="underline text-blue-600">
+        <div className="space-y-2">
+          <p className="flex items-center gap-2">
+            <span>🔗</span>
+            <a href={content.github} className="underline text-blue-600 hover:text-blue-800 transition-colors">
               Repositorio en GitHub
             </a>
           </p>
-          <p>
-            🌐{" "}
-            <a href={content.demo} className="underline text-blue-600">
+          <p className="flex items-center gap-2">
+            <span>🌐</span>
+            <a href={content.demo} className="underline text-blue-600 hover:text-blue-800 transition-colors">
               Acceder a la aplicación
             </a>
           </p>
