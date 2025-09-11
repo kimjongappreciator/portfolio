@@ -5,7 +5,8 @@ export const financeData: ContentModel = {
   github: "https://github.com/kimjongappreciator/monthly-expenses-vue",
   demo: "https://kimjongappreciator.github.io/monthly-expenses-vue/",
   stack: ["Vue 🟢", "Tailwind 🌬️", "Pinia 🍍", "Unovis 📊"],
-  path: "/finance"
+  path: "/finance",
+  pic:"https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/finance.jpg"
 };
 
 export const threeDemoData: ContentModel = {
@@ -13,7 +14,8 @@ export const threeDemoData: ContentModel = {
   github: "https://github.com/kimjongappreciator/three-sample",
   demo: "https://kimjongappreciator.github.io/three-sample/",
   stack: ["React ⚛️", "Tailwind 🌬️", "Three.js 🌐", "Shadcn 🎛️"],
-  path: "/ocean"
+  path: "/ocean",
+  pic: "https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/ocean-sim.jpg"
 };
 
 export const credsUpdtData: ContentModel = {

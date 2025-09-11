@@ -4,4 +4,5 @@ export type ContentModel = {
   demo: string;
   stack: string[];
   path: string;
+  pic?: string;
 };

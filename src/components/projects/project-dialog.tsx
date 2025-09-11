@@ -14,7 +14,7 @@ export function ProjectDialog(content: ContentModel) {
 
         <div className="flex gap-4 mb-4">          
           <div className="w-40 h-28 bg-[#e0e0e0] border border-black flex items-center justify-center text-xs">
-            [ Imagen aquí ]
+            <img src={content.pic} alt="Project Image" className="w-full h-full object-cover" />
           </div>
           
           <p className="leading-relaxed">{t(content.description)}</p>
