@@ -64,13 +64,13 @@
 
 
   "montly_expenses": "Personal Finance App",
-  "montly_expenses_description": "Application to record and visualize monthly income and expenses. Data and session state are stored persistently using browser storage. Includes support for light and dark themes.",
+  "montly_expenses_description": "Application to record and visualize monthly income and expenses. Data and session state are stored persistently using the pinia storage. Includes support for light and dark themes.",
   
   "three_demo": "Water Simulator",
   "three_demo_description": "Interactive 3D water simulation demo with collision and noise effects.",
   
   "kanban_board": "Kanban Board",
-  "kanban_board_description": "Interactive board to manage tasks in columns with drag-and-drop support. It also supports theming",
+  "kanban_board_description": "Interactive board to manage tasks in columns with drag-and-drop support. It also supports theming and persists the data with zustand",
   
   "graph_demo": "Function Grapher",
   "graph_demo_description": "Tool to plot mathematical functions on an interactive canvas.",

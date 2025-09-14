@@ -62,13 +62,13 @@
 
 
   "montly_expenses": "App de Finanzas Personales",
-  "montly_expenses_description": "Aplicación para registrar y visualizar ingresos y gastos mensuales. Los datos y el estado de la sesión se almacenan de forma persistente en el almacenamiento del navegador. Incluye soporte para tema claro y oscuro.",
+  "montly_expenses_description": "Aplicación para registrar y visualizar ingresos y gastos mensuales. Los datos y el estado de la sesión se almacenan de forma persistente en el almacenamiento del navegador con pinia. Incluye soporte para tema claro y oscuro.",
   
   "three_demo": "Simulador de agua",
   "three_demo_description": "Demostración interactiva de simulación de agua en 3D con colisión y ruido simulado.",
   
   "kanban_board": "Tablero Kanban",
-  "kanban_board_description": "Tablero interactivo para gestionar tareas en columnas con soporte de arrastrar y soltar. Tambien tiene soporte para temas",
+  "kanban_board_description": "Tablero interactivo para gestionar tareas en columnas con soporte de arrastrar y soltar. Tambien tiene soporte para temas y persistencia de datos con zustand",
   
   "graph_demo": "Graficadora de funciones",
   "graph_demo_description": "Herramienta para graficar funciones matemáticas en un lienzo interactivo.",
