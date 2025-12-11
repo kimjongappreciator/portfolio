@@ -54,7 +54,7 @@ export function MyProjects() {
       <div className="w-auto h-[60vh] max-h-[60vh] flex flex-col">
         <ExplorerBar route="C:/Desktop/My Projects" />
         <div className="flex overflow-auto h-full">
-          <div className="w-[30%] h-[30%] border-r border-gray-300 bg-[url(src/assets/projects-folder/explorercorner.jpg)] bg-cover">
+          <div className="w-[25%] h-[30%] border-r border-gray-300 bg-[url(https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/explorercorner.jpg)] bg-cover">
             <img src={folder} alt="folder" className="w-10 h-10 m-4" />
             <h2 className="text-lg font-semibold m-4">My Projects</h2>
           </div>
