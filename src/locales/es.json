@@ -83,6 +83,9 @@
   "creds_updt_description": "Interfaz y api rest para actualizar credenciales con validación y confirmación de seguridad.",
   "creds_updt_git": "Projecto Privado",
 
-  "projects_disclaimer": "Aquí solo muestro los proyectos públicos. Casi todos tienen el código disponible, menos uno que es de una institución."
+  "projects_disclaimer": "Aquí solo muestro los proyectos públicos. Casi todos tienen el código disponible, menos uno que es de una institución.",
+
+  "telematica": "Red Telematica",
+  "telematica_description": "Sitio de la Red Telematica de la Universidad nacional Mayor de San Marcos. El codigo no es publico, pero pueden revisar el sitio web principal."
 
 }

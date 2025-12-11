@@ -61,3 +61,11 @@ export const signAppData: ContentModel = {
   pic:"https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/signapp.png",
   extra: "https://ieeexplore.ieee.org/document/10819223"
 };
+
+export const telematicaData: ContentModel = {
+  description: "telematica_description",  
+  stack: ["React ⚛️", "Tailwind 🌬️", "Shadcn 🎛️"],
+  demo: "https://webmail.unmsm.edu.pe/",
+  path: "/telematica",
+  pic: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.jpg"
+};

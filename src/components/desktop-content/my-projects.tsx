@@ -13,6 +13,7 @@ import {
   graphDemoData,
   kanbanData,
   signAppData,
+  telematicaData,
   threeDemoData,
   weatherAppData,
 } from "../models/project-data";
@@ -25,6 +26,7 @@ const graphDemoContent: ContentModel = graphDemoData;
 const kanbanContent: ContentModel = kanbanData;
 const weatherContent: ContentModel = weatherAppData;
 const signappContent: ContentModel = signAppData;
+const telematicaContent: ContentModel = telematicaData;
 
 type DialogType =
   | "montly_expenses"
@@ -34,6 +36,7 @@ type DialogType =
   | "signapp"
   | "weather_app"
   | "creds_updt"
+  | "telematica"
   | null;
 
 export function MyProjects() {
@@ -98,6 +101,11 @@ export function MyProjects() {
                 icon={html_icon}
                 label="creds_updt"
                 onClick={() => handleIconClick("creds_updt")}
+              />
+              <Icon
+                icon={html_icon}
+                label="telematica"
+                onClick={() => handleIconClick("telematica")}
               />
             </div>
           </div>
@@ -166,6 +174,15 @@ export function MyProjects() {
           <DialogTitle hidden={true}></DialogTitle>
           <WindowComponent title="creds_updt" onClose={closeDialog}>
             <ProjectDialog {...credsupdtContent} />
+          </WindowComponent>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={activeDialog === "telematica"} onOpenChange={closeDialog}>
+        <DialogContent className="dialog-component" showCloseButton={false}>
+          <DialogTitle hidden={true}></DialogTitle>
+          <WindowComponent title="telematica" onClose={closeDialog}>
+            <ProjectDialog {...telematicaContent} />
           </WindowComponent>
         </DialogContent>
       </Dialog>
