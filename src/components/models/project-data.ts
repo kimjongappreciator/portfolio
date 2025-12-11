@@ -65,7 +65,7 @@ export const signAppData: ContentModel = {
 export const telematicaData: ContentModel = {
   description: "telematica_description",  
   stack: ["React ⚛️", "Tailwind 🌬️", "Shadcn 🎛️"],
-  demo: "https://webmail.unmsm.edu.pe/",
+  demo: "https://telematica.unmsm.edu.pe/",
   path: "/telematica",
   pic: "https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/telematica.jpg"
 };
