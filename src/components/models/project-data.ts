@@ -67,5 +67,5 @@ export const telematicaData: ContentModel = {
   stack: ["React ⚛️", "Tailwind 🌬️", "Shadcn 🎛️"],
   demo: "https://webmail.unmsm.edu.pe/",
   path: "/telematica",
-  pic: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.jpg"
+  pic: "https://raw.githubusercontent.com/kimjongappreciator/portfolio/refs/heads/main/src/assets/projects-folder/telematica.jpg"
 };
